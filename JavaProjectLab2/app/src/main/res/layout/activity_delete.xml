@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    tools:context="com.example.lab2bun.DeleteReclamatieActivity"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="38dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recipeNameField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/prepTimeField"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#070000" />
+
+            <TextView
+                android:id="@+id/cookTimeField"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#0B0000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/servingField"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#0B0000" />
+
+                <TextView
+                    android:id="@+id/kcalField"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#0B0000" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ingredientsField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#090000" />
+
+            <ImageView
+                android:id="@+id/imageViewRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/descriptionField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#090000" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="307dp">
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="245dp"
+                    android:layout_height="49dp"
+                    android:layout_marginBottom="60dp"
+                    android:text="Update"
+                    app:icon="@android:drawable/ic_menu_edit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.555"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_width="246dp"
+                    android:layout_height="49dp"
+                    android:text="Delete"
+                    app:icon="@android:drawable/ic_delete"
+                    app:layout_constraintBottom_toTopOf="@+id/updateButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.55"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.364" />
+
+                <Button
+                    android:id="@+id/buttonEditReclamatie"
+                    android:layout_width="235dp"
+                    android:layout_height="48dp"
+                    android:text="Edit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.447" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ro.sapca.recipeapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RecipeApp">
+        <activity
+            android:name="ro.sapca.recipeapp.view.AddActivity"
+            android:exported="true"
+            android:label="add Recipe"
+            android:parentActivityName="ro.sapca.recipeapp.MainActivity"
+            />
+        <activity
+            android:name="ro.sapca.recipeapp.view.UpdateActivity"
+            android:exported="true"
+            android:label="update recipe"
+            android:parentActivityName="ro.sapca.recipeapp.view.DeleteRecipeActivity"
+            />
+        <activity
+            android:name="ro.sapca.recipeapp.view.DeleteRecipeActivity"
+            android:exported="true"
+            android:label="delete Recipe"
+            android:parentActivityName="ro.sapca.recipeapp.MainActivity"
+            />
+        <activity
+            android:name="ro.sapca.recipeapp.MainActivity"
+            android:exported="true"
+            android:label="recipes...">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
